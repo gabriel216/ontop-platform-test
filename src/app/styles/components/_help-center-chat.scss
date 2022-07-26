@@ -1,0 +1,20 @@
+.chat-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background: #FF5A70;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    @include media-breakpoint-down(md) {
+        bottom: 15px;
+        right: 15px;
+    }
+    img {
+        margin: 25% auto;
+        display: block;
+        width: 55%;
+    }
+}

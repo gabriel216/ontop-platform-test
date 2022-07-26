@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@import './components/clients-contracts-list';
+@import './components/clients-contracts-view';
+@import './components/navbar';
+@import './components/search';
+@import './components/help-center-chat';
+@import './components/actions-contracts-list';
+@import './components/add-new-hire';
+@import './components/filter-section';
+@import './base/base';

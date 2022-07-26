@@ -1,0 +1,18 @@
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    border-color: transparent;
+}
+
+
+.btn:hover {
+    border-color: transparent;
+}
+
+.three-dots {
+    @include media-breakpoint-down(lg) {
+        transform: rotate(90deg);
+    }
+}
