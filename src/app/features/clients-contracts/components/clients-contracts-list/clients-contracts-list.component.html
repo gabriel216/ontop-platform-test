@@ -1,75 +1,44 @@
-<!-- <table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">Type</th>
-            <th scope="col">Start date</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Status</th>
-            <th scope="col">Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let contract of contracts">
-            <td>
-                {{ contract.contractorName }}
-            </td>
-            <td>
-                {{ contract.type }}
-            </td>
-            <td>
-                {{ contract.startDate }}
-            </td>
-            <td>
-                ${{ contract.amount }} USD
-            </td>
-            <td>
-                {{ contract.status }}
-            </td>
-            <td>
-                <app-actions-contracts-list></app-actions-contracts-list>
-            </td>
-        </tr>
-    </tbody>
-</table> -->
-
 <div class="table-responsive" id="no-more-tables">
-  <table class="table">
-      <thead>
-          <tr>
-            <th>Contractor name</th>
-            <th>Type</th>
-            <th>Start date</th>
-            <th>Amount</th>
-            <th>Status</th>
-            <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let contract of contracts">
-            <td data-title="Contractor name">
-                {{ contract.contractorName }}
-            </td>
-            <td data-title="Type">
-                {{ contract.type }}
-            </td>
-            <td data-title="Start date">
-                {{ contract.startDate }}
-            </td>
-            <td data-title="Amount">
-                ${{ contract.amount }} USD
-            </td>
-            <td data-title="Status">
-              <div class="container-status" [ngClass]="{'container-status-active': contract.status === contractStatus.ACTIVE, 'container-status-signature-pending': contract.status === contractStatus.SIGNATURE_PENDING}">
-                <div class="dot-indicator" [ngClass]="{'dot-indicator-active': contract.status === contractStatus.ACTIVE, 'dot-indicator-pending': contract.status === contractStatus.SIGNATURE_PENDING}"></div>
-                <p>
-                  {{ contract.status }}
-                </p>
-              </div>
-            </td>
-            <td data-title="Actions">
-                <app-actions-contracts-list></app-actions-contracts-list>
-            </td>
-        </tr>
-      </tbody>
-  </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Contractor name</th>
+                <th>Type</th>
+                <th>Start date</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contract of contracts">
+                <td data-title="Contractor name">
+                    {{ contract.contractorName }}
+                </td>
+                <td data-title="Type">
+                    {{ contract.type }}
+                </td>
+                <td data-title="Start date">
+                    {{ contract.startDate }}
+                </td>
+                <td data-title="Amount">
+                    ${{ contract.amount }} USD
+                </td>
+                <td data-title="Status">
+                    <div class="container-status"
+                        [ngClass]="{'container-status-active': contract.status === contractStatus.ACTIVE, 'container-status-signature-pending': contract.status === contractStatus.SIGNATURE_PENDING}">
+                        <div class="dot-indicator"
+                            [ngClass]="{'dot-indicator-active': contract.status === contractStatus.ACTIVE, 'dot-indicator-pending': contract.status === contractStatus.SIGNATURE_PENDING}">
+                        </div>
+                        <p>
+                            {{ contract.status }}
+                        </p>
+                    </div>
+                </td>
+                <td data-title="Actions">
+                    <app-actions-contracts-list></app-actions-contracts-list>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
