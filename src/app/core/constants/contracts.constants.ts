@@ -2,7 +2,7 @@ import { CONTRACT_STATUS, CONTRACT_TYPE, IContract } from "./types.constants";
 
 export let CONTRACTS: Array<IContract> = [
     {
-        contractorName: 'Darlene Robertson',
+        contractorName: 'Darlene Zamora',
         type: CONTRACT_TYPE.TRADITIONAL,
         startDate: 'Mar 4, 2021',
         amount: '200',

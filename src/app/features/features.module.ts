@@ -5,13 +5,16 @@ import { SharedModule } from "../shared/shared.module";
 import { ClientsContractsListComponent } from "./clients-contracts/components/clients-contracts-list/clients-contracts-list.component";
 import { ClientsContractsViewComponent } from './clients-contracts/pages/clients-contracts-view/clients-contracts-view.component';
 import { FeaturesRoutingModule } from "./features-routing.module";
+import { OrderModule } from 'ngx-order-pipe';
+
 
 @NgModule({
     imports: [
         FeaturesRoutingModule,
         CoreModule,
         SharedModule,
-        CommonModule
+        CommonModule,
+        OrderModule
     ],
     declarations: [
         ClientsContractsListComponent,

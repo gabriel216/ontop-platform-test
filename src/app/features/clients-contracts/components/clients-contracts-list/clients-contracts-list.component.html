@@ -11,7 +11,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let contract of contracts">
+            <tr *ngFor="let contract of contracts | orderBy: order">
                 <td data-title="Contractor name">
                     {{ contract.contractorName }}
                 </td>

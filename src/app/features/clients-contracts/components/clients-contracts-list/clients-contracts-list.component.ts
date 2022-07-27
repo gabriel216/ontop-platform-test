@@ -10,6 +10,7 @@ import { CONTRACT_STATUS } from 'src/app/core/constants/types.constants';
 export class ClientsContractsListComponent implements OnInit {
   contracts = CONTRACTS;
   contractStatus = CONTRACT_STATUS;
+  order = 'contractorName';
   constructor() { }
 
   ngOnInit(): void {
